@@ -1,0 +1,12 @@
+def f(m,n):
+    l = [[]]
+    for i in range(m):
+        l.append(None)
+    for i in range(len(l)):
+        if type(l[i]) is list:
+            for num in n:
+                if i + num in range(len(l)):
+                    l[i+num] = l[i] + [num]
+
+
+    return l[m]
